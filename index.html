@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Bienvenue sur mon portfolio</h2>
+        <p>Découvrez mes projets et compétences.</p>
+        <a href="#projects" class="btn">Voir mes projets</a>
+    </section>
+    
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur passionné par la création de solutions web modernes.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project-grid">
+            <div class="project-card">Projet 1</div>
+            <div class="project-card">Projet 2</div>
+            <div class="project-card">Projet 3</div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Envoyez-moi un message pour discuter de collaborations.</p>
+    </section>
+    
+    <script>
+        gsap.from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
+        gsap.from("#hero h2", { duration: 1, x: -100, opacity: 0, delay: 0.5 });
+        gsap.from(".btn", { duration: 1, scale: 0, opacity: 0, delay: 1 });
+        
+        document.querySelectorAll(".project-card").forEach(card => {
+            card.addEventListener("mouseenter", () => {
+                gsap.to(card, { scale: 1.1, duration: 0.3 });
+            });
+            card.addEventListener("mouseleave", () => {
+                gsap.to(card, { scale: 1, duration: 0.3 });
+            });
+        });
+    </script>
+</body>
+</html>
