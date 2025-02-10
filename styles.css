@@ -78,11 +78,11 @@ nav a:hover {
     font-family: 'Courier New', monospace;
     font-size: 18px;
     color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
+    white-space: normal; 
+    overflow-wrap: break-word; 
     border-right: 3px solid #fff;
-    width: 0;
-    animation: typing 4s steps(40) 1s forwards, blinkCaret 0.75s step-end infinite;
+    width: 100%;
+    animation: typing 6s steps(60) 1s forwards, blinkCaret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -99,6 +99,7 @@ nav a:hover {
         border-color: transparent;
     }
 }
+
 
 
 /* Sections */
