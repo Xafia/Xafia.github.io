@@ -69,6 +69,108 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+/* Sections */
+section {
+    padding: 60px;
+    background: #1a1a1a;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ff5733;
+}
+
+/* Compétences */
+.skills-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-btn {
+    background: #262626;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff5733;
+}
+
+/* Langages */
+.languages {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.language {
+    text-align: center;
+}
+
+.language img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.language p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Outils utilisés */
+.tools-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tool {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #262626;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.tool img {
+    width: 50px;
+    height: 50px;
+}
+
+.tool-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tool:hover .tool-info {
+    opacity: 1;
+}
+
+/* Projets */
 .project-grid {
     display: flex;
     justify-content: center;
