@@ -128,11 +128,10 @@ h2 {
 }
 
 /* Outils utilisés */
-/* Outils utilisés */
 .tools-grid {
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -140,20 +139,20 @@ h2 {
     position: relative;
     width: 100px;
     height: 100px;
-    background: #262626;
+    background-color: #262626;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease;
 }
 
 .tool img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease-in-out;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.5s ease;
 }
 
 .tool-info {
@@ -162,26 +161,24 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
     opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-    transform: rotateY(90deg);
-    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    font-size: 14px;
 }
 
 .tool:hover img {
-    transform: rotate(180deg); 
+    transform: rotate(180deg);
 }
 
 .tool:hover .tool-info {
     opacity: 1;
-    transform: rotateY(0deg); 
 }
+
 
 /* Projets */
 .project-grid {
