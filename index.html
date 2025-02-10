@@ -31,8 +31,22 @@
     
     <section id="about">
         <h2>À propos de moi</h2>
-        <p>Je suis étudiiiiiiiiiiiiiante.</p>
-    </section>
+        <p id="intro"></p>
+    </section>    
+
+    <script>
+        const text = "Actuellement une étudiante en 3ème année en informatique, passionnée par le développement web et la cybersécurité.";
+        let i = 0;
+        const speed = 100; 
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("intro").textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        window.onload = typeWriter;
+    </script>
     
     <!-- Compétences -->
     <section id="skills">
