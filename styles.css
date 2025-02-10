@@ -78,10 +78,10 @@ nav a:hover {
     font-family: 'Courier New', monospace;
     font-size: 18px;
     color: #fff;
-    white-space: normal; 
-    overflow-wrap: break-word; 
-    border-right: 3px solid #fff;
-    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 3px solid #fff; 
+    width: 0; 
     animation: typing 6s steps(60) 1s forwards, blinkCaret 0.75s step-end infinite;
 }
 
@@ -90,7 +90,7 @@ nav a:hover {
         width: 0;
     }
     to {
-        width: 100%;
+        width: 100%; 
     }
 }
 
@@ -99,7 +99,6 @@ nav a:hover {
         border-color: transparent;
     }
 }
-
 
 
 /* Sections */
