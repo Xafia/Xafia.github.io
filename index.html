@@ -14,7 +14,8 @@
             <ul>
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#skills">Compétences</a></li>
-                <li><a href="#programming-languages">Langages de programmation</a></li>
+                <li><a href="#languages">Langages de programmation</a></li>
+                <li><a href="#tools">Outils utilisés</a></li>
                 <li><a href="#projects">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,7 +32,8 @@
         <h2>À propos de moi</h2>
         <p>Je suis étudiiiiiiiiiiiiiante.</p>
     </section>
-
+    
+    <!-- Compétences -->
     <section id="skills">
         <h2>Compétences</h2>
         <div class="skills-buttons">
@@ -43,34 +45,47 @@
             <button class="skill-btn">Compétence 6</button>
         </div>
     </section>
-
-    <section id="programming-languages">
+    
+    <!-- Langages de programmation -->
+    <section id="languages">
         <h2>Langages de programmation</h2>
-        <div class="languages-grid">
-            <div class="language-card">
-                <img src="path/to/logo1.png" alt="Langage 1">
-                <p>Nom du Langage 1</p>
+        <div class="languages">
+            <div class="language">
+                <img src="path_to_image" alt="Logo Python">
+                <p>Python</p>
             </div>
-            <div class="language-card">
-                <img src="path/to/logo2.png" alt="Langage 2">
-                <p>Nom du Langage 2</p>
+            <div class="language">
+                <img src="path_to_image" alt="Logo JavaScript">
+                <p>JavaScript</p>
             </div>
-            <div class="language-card">
-                <img src="path/to/logo3.png" alt="Langage 3">
-                <p>Nom du Langage 3</p>
+            <div class="language">
+                <img src="path_to_image" alt="Logo HTML">
+                <p>HTML</p>
             </div>
-            <div class="language-card">
-                <img src="path/to/logo4.png" alt="Langage 4">
-                <p>Nom du Langage 4</p>
+            <div class="language">
+                <img src="path_to_image" alt="Logo CSS">
+                <p>CSS</p>
             </div>
-            <div class="language-card">
-                <img src="path/to/logo5.png" alt="Langage 5">
-                <p>Nom du Langage 5</p>
+        </div>
+    </section>
+    
+    <!-- Outils utilisés -->
+    <section id="tools">
+        <h2>Outils utilisés</h2>
+        <div class="tools-grid">
+            <div class="tool">
+                <img src="path_to_image" alt="Logo BurpSuite">
+                <div class="tool-info">Test de sécurité web</div>
             </div>
-            <div class="language-card">
-                <img src="path/to/logo6.png" alt="Langage 6">
-                <p>Nom du Langage 6</p>
+            <div class="tool">
+                <img src="path_to_image" alt="Logo Git">
+                <div class="tool-info">Gestion de version</div>
             </div>
+            <div class="tool">
+                <img src="path_to_image" alt="Logo VSCode">
+                <div class="tool-info">Éditeur de code</div>
+            </div>
+            <!-- Ajouter d'autres outils ici -->
         </div>
     </section>
     
@@ -99,6 +114,15 @@
             });
             card.addEventListener("mouseleave", () => {
                 gsap.to(card, { scale: 1, duration: 0.3 });
+            });
+        });
+        
+        document.querySelectorAll('.tool').forEach(tool => {
+            tool.addEventListener('mouseenter', () => {
+                tool.querySelector('.tool-info').style.opacity = 1;
+            });
+            tool.addEventListener('mouseleave', () => {
+                tool.querySelector('.tool-info').style.opacity = 0;
             });
         });
     </script>
