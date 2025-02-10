@@ -74,6 +74,33 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+#intro {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    width: 0;
+    animation: typing 4s steps(40) 1s forwards, blinkCaret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCaret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
 /* Sections */
 section {
     padding: 60px;
