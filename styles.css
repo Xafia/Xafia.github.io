@@ -15,15 +15,14 @@ header {
     background: #0d0d0d;
     padding: 20px;
     position: fixed;
-    width: 100%;
+    width: calc(100% - 50px);
     top: 0;
-    left: 0;
+    left: 50;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    margin-left: 50px;
 }
 
 nav ul {
