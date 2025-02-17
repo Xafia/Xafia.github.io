@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+#contact {
+    text-align: left;
+    padding: 50px;
+    margin-left: 50px;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -78,10 +83,11 @@ nav a:hover {
     font-family: 'Courier New', monospace;
     font-size: 18px;
     color: #fff;
-    white-space: normal; 
-    overflow-wrap: break-word; 
+    white-space: normal;
+    overflow-wrap: break-word;
     border-right: 3px solid #fff;
-    width: 100%;
+    display: inline-block;
+    text-align: left;
     animation: typing 6s steps(60) 1s forwards, blinkCaret 0.75s step-end infinite;
 }
 
