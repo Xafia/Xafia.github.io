@@ -8,7 +8,6 @@ body {
     padding: 0;
     background: #0d0d0d;
     color: #ffffff;
-    text-align: center;
 }
 
 header {
@@ -22,15 +21,20 @@ header {
 }
 
 .header-content {
-    margin-left: 50px; 
-    margin-right: 50px; 
+    margin: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.header-content h1 {
+    text-transform: uppercase; 
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin: 0; 
+}
+
 nav ul {
-    margin-left: 50px;
     list-style: none;
     padding: 0;
     display: flex;
@@ -39,9 +43,10 @@ nav ul {
 }
 
 nav a {
+    text-transform: uppercase;
+    font-size: 16px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
     transition: color 0.3s;
     font-weight: 500;
 }
