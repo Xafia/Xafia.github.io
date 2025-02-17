@@ -13,12 +13,17 @@ body {
 
 header {
     background: #0d0d0d;
-    padding: 20px 50px; 
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 1000;
+    padding: 20px 0;
+}
+
+.header-content {
+    margin-left: 50px; 
+    margin-right: 50px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
