@@ -56,31 +56,60 @@ nav a:hover {
 }
 
 #hero {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: radial-gradient(circle, #1a1a1a, #0d0d0d);
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; 
+    background-color: #0d0d0d; 
+}
+
+.profile-pic {
+    width: 180px;  
+    height: auto;  
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.big-title {
+    font-size: 3rem;
+    color: #ff5733;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 12px 25px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
     background: #ff5733;
-    color: #ffffff;
     text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #c44127;
-    transform: scale(1.05);
+    background: #ff784d;
 }
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 140px;
+    }
+    .big-title {
+        font-size: 2.5rem;
+    }
+}
+
 
 #intro {
     font-family: 'Courier New', monospace;
