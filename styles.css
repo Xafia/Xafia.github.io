@@ -61,12 +61,12 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 200vh; 
+    height: 100vh; 
     background-color: #0d0d0d; 
 }
 
 .profile-pic {
-    width: 180px;  
+    width: 250px;  
     height: auto;  
     border-radius: 50%; 
     object-fit: cover;
