@@ -8,6 +8,7 @@ body {
     padding: 0;
     background: #0d0d0d;
     color: #ffffff;
+    align-items: center;
 }
 
 header {
