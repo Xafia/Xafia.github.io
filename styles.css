@@ -9,7 +9,6 @@ body {
     background: #0d0d0d;
     color: #ffffff;
     text-align: center;
-    margin-left: 50px;
 }
 
 header {
@@ -24,6 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    margin-left: 50px;
 }
 
 nav ul {
