@@ -8,7 +8,6 @@ body {
     padding: 0;
     background: #0d0d0d;
     color: #ffffff;
-    align-items: center;
 }
 
 header {
@@ -151,6 +150,7 @@ section {
 h2 {
     font-size: 2.5em;
     color: #ff5733;
+    text-align: center; 
 }
 
 /* Compétences */
