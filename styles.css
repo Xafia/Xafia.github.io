@@ -157,28 +157,7 @@ nav a:hover {
     color: #fff;
     white-space: normal;
     overflow-wrap: break-word;
-    border-right: 3px solid #fff;
-    display: inline-block;
-    text-align: left;
-    animation: typing 6s steps(60) 1s forwards, blinkCaret 0.75s step-end infinite;
 }
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blinkCaret {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
 
 /* Sections */
 section {
