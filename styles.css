@@ -170,7 +170,6 @@ h2 {
 }
 
 /* Compétences */
-/* Section des compétences */
 #skills {
     text-align: center;
     margin-top: 40px;
@@ -181,15 +180,16 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Conteneur des blocs de compétences */
 .skills-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    justify-content: center;
+    max-width: 900px; 
+    margin: auto; 
 }
 
-/* Bloc de chaque compétence */
+
 .skill-block {
     background-color: black; 
     color: white; 
@@ -213,7 +213,6 @@ h2 {
     transform: scale(1.05); 
     box-shadow: 0px 4px 20px rgba(255, 87, 51, 0.5); 
 }
-
 
 /* Langages */
 .languages {
