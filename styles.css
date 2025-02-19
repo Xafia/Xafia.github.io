@@ -171,28 +171,58 @@ h2 {
 }
 
 /* Compétences */
-.skills-buttons {
-    display: flex;
+#skills {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crée une grille responsive */
     gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+}
+
+.skill-block {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-block:hover {
+    transform: translateY(-10px); /* Ajoute un effet de survol pour le bloc */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-block h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skill-block p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 .skill-btn {
-    background: #262626;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 16px;
+    background-color: #007bff;
     color: #ffffff;
     border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .skill-btn:hover {
-    transform: scale(1.1);
-    background-color: #ff5733;
+    background-color: #0056b3;
 }
+
 
 /* Langages */
 .languages {
@@ -269,8 +299,6 @@ h2 {
 .tool:hover .tool-info {
     opacity: 1;
 }
-
-
 
 /* Projets */
 .project-grid {
