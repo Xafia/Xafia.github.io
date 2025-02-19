@@ -318,6 +318,7 @@ h2 {
 
 /* Contacts */
 form {
+    justify-content: center;
     width: 90%;
     max-width: 900px;
     background-color: black;
