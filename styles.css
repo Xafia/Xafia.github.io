@@ -65,13 +65,12 @@ nav a:hover {
     background-color: #0d0d0d; 
 }
 
-.profile-pic {
-    width: 500px;  
-    height: auto;  
+.profile-photo img {
+    width: 150px; 
+    height: 150px;
     border-radius: 50%; 
-    object-fit: cover;
-    margin-bottom: 20px;
-    max-width: none;
+    object-fit: cover; 
+    border: 3px solid #fff; 
 }
 
 .big-title {
