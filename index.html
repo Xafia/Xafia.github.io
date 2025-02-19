@@ -193,19 +193,41 @@
     
     <section id="contact">
         <h2>Contact</h2>
-        <form class="contact-form">
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" required />
-  
-          <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
-  
-          <label for="message">Message :</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-  
-          <button type="submit">Envoyer</button>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+    
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+    
+            <button type="submit">Envoyer</button>
+            <p id="success-message" class="hidden">Votre message a bien été envoyé.</p>
         </form>
-      </section>
+    </section>
+    
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            let nom = document.getElementById("nom").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+    
+            let mailtoLink = `mailto:t.lac-64@laposte.net?subject=Contact de ${nom}&body=Email: ${email}%0D%0A%0D%0A${message}`;
+            
+            window.location.href = mailtoLink;
+    
+            let successMessage = document.getElementById("success-message");
+            successMessage.classList.remove("hidden");
+            
+            document.querySelector(".contact-form").reset();
+        }
+    </script>
+    
+    
     
     <script>
         gsap.from("header", { duration: 1, y: -100, opacity: 0, ease: "bounce" });
