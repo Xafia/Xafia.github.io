@@ -111,6 +111,45 @@ nav a:hover {
     }
 }
 
+.hero-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.github-link:hover {
+    color: #ff5733;
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background: #ff5733;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.download-cv:hover {
+    background: #ff784d;
+}
+
 
 #intro {
     font-family: 'Courier New', monospace;
