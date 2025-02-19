@@ -191,16 +191,13 @@ h2 {
 
 /* Bloc de chaque compétence */
 .skill-block {
-    background-color: #000000; 
-    color: #ffffff; 
-    border-radius: 8px;
-    width: 250px; 
+    background-color: black; 
+    color: white; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s, box-shadow 0.3s; 
-    cursor: pointer; 
-    text-align: left; 
-
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out; 
+}
 .skill-block h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -216,7 +213,7 @@ h2 {
     transform: scale(1.05); 
     box-shadow: 0px 4px 20px rgba(255, 87, 51, 0.5); 
 }
-}
+
 
 /* Langages */
 .languages {
