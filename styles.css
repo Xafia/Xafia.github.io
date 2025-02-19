@@ -175,6 +175,11 @@ h2 {
     margin-top: 40px;
 }
 
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
 .skills-container {
     display: flex;
     justify-content: center;
@@ -192,7 +197,6 @@ h2 {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #ffffff;
-    cursor: pointer;
 }
 
 .skill-block h3 {
@@ -210,32 +214,6 @@ h2 {
     transform: scale(1.05); 
     box-shadow: 0px 4px 20px rgba(255, 87, 51, 0.5); 
 }
-
-/* Alignement des compétences comme les projets */
-#skills .skills-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 60px;
-    background: #1a1a1a;
-}
-
-#skills .skill-block {
-    background: #262626;
-    padding: 30px;
-    border-radius: 15px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    color: #ffffff;
-}
-
-#skills .skill-block:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 4px 20px rgba(255, 87, 51, 0.5);
-}
-
 
 /* Langages */
 .languages {
