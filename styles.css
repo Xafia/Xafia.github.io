@@ -171,55 +171,48 @@ h2 {
 
 /* Compétences */
 #skills {
-    padding: 50px;
-    background-color: #f4f4f4;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crée une grille responsive */
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .skill-block {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #f4f4f4; 
     border-radius: 8px;
+    width: 250px; 
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill-block:hover {
-    transform: translateY(-10px); /* Ajoute un effet de survol pour le bloc */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    cursor: pointer; 
+    text-align: left; 
 }
 
 .skill-block h3 {
     font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    color: #333; 
 }
 
 .skill-block p {
     font-size: 1em;
-    color: #555;
-    margin-bottom: 20px;
+    color: #666; 
 }
 
-.skill-btn {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.skill-btn:hover {
-    background-color: #0056b3;
+.skill-block:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    background-color: #e0e0e0;
 }
 
 
