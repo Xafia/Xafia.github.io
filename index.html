@@ -220,8 +220,13 @@
             
             window.location.href = mailtoLink;
     
-            let successMessage = document.getElementById("success-message");
-            successMessage.classList.remove("hidden");
+            document.addEventListener("DOMContentLoaded", function () {
+                let successMessage = document.getElementById("success-message");
+                if (successMessage) {
+                    successMessage.classList.add("hidden");
+                }
+            });
+
             
             document.querySelector(".contact-form").reset();
         }
@@ -255,7 +260,6 @@
     <footer>
         <div class="footer-content">
             <p>📧 Email : <a href="mailto:t.lac-64@laposte.net">t.lac-64@laposte.net</a></p>
-            <p>🔗 LinkedIn : <a href="www.linkedin.com/in/tessie-lacomme-0a35a0273" target="_blank">Mon LinkedIn</a></p>
             <a href="www.linkedin.com/in/tessie-lacomme-0a35a0273" target="_blank" class="btn linkedin-btn">Visiter mon LinkedIn</a>
         </div>
     </footer>
