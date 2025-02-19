@@ -204,7 +204,6 @@
             <textarea id="message" name="message" rows="6" required></textarea>
     
             <button type="submit">Envoyer</button>
-            <p id="success-message" class="hidden">Votre message a bien été envoyé.</p>
         </form>
     </section>
     
@@ -220,12 +219,6 @@
             
             window.location.href = mailtoLink;
     
-            document.addEventListener("DOMContentLoaded", function () {
-                let successMessage = document.getElementById("success-message");
-                if (successMessage) {
-                    successMessage.classList.add("hidden");
-                }
-            });
 
             
             document.querySelector(".contact-form").reset();
