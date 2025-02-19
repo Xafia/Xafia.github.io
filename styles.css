@@ -383,47 +383,38 @@ h2 {
 }
 
 footer {
-    background-color: #0d0d0d;
-    color: white;
-    text-align: center;
+    text-align: center; 
+    background-color: #333; 
+    color: white; 
     padding: 20px;
-    margin-top: 40px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: 50px; 
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-content a {
-    color: #ff5733;
+footer a {
+    color: #FFD700; 
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer-content a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
 .linkedin-btn {
-    background-color: #ff5733;
+    display: inline-block;
+    background-color: #0077b5; 
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    transition: background 0.3s ease-in-out;
 }
 
 .linkedin-btn:hover {
-    background-color: #ff784d;
+    background-color: #005582; 
 }
+
 
 
 /* Responsive */
